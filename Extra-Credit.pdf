@@ -1,0 +1,199 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<< /F1 2 0 R /F2 3 0 R /F3 5 0 R >>
+endobj
+2 0 obj
+<< /BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
+endobj
+3 0 obj
+<< /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font >>
+endobj
+4 0 obj
+<< /A << /S /URI /Type /Action /URI (http://pymotw.com/2/csv/) >> /Border [ 0 0 0 ] /Rect [ 66.02291 599.7736 176.0629 611.7736 ] /Subtype /Link /Type /Annot >>
+endobj
+5 0 obj
+<< /BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font >>
+endobj
+6 0 obj
+<< /Annots [ 4 0 R ] /Contents 13 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 12 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 
+  /Trans <<  >> /Type /Page >>
+endobj
+7 0 obj
+<< /Outlines 9 0 R /PageLabels 14 0 R /PageMode /UseNone /Pages 12 0 R /Type /Catalog >>
+endobj
+8 0 obj
+<< /Author () /CreationDate (D:20150506024549+00'00') /Creator (\(unspecified\)) /Keywords () /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) 
+  /Title (CSV MODULE) >>
+endobj
+9 0 obj
+<< /Count 2 /First 10 0 R /Last 11 0 R /Type /Outlines >>
+endobj
+10 0 obj
+<< /Dest [ 6 0 R /XYZ 62.69291 587.0236 0 ] /Next 11 0 R /Parent 9 0 R /Title (Reading a csv file:) >>
+endobj
+11 0 obj
+<< /Dest [ 6 0 R /XYZ 62.69291 332.8236 0 ] /Parent 9 0 R /Prev 10 0 R /Title (Writing a csv file:) >>
+endobj
+12 0 obj
+<< /Count 1 /Kids [ 6 0 R ] /Type /Pages >>
+endobj
+13 0 obj
+<< /Length 5360 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 168.2749 0 Td (CSV MODULE) Tj T* -168.2749 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 599.0236 cm
+q
+BT 1 0 0 1 0 122 Tm 1.72186 Tw 12 TL /F1 10 Tf 0 0 0 rg (While this week's work focuses on three primary types of data storage, flat text, JSON, and Python's) Tj T* 0 Tw .096412 Tw (pickle, there is a wide world of meaningful/accessible data types available to Python practitioners. Another) Tj T* 0 Tw .669398 Tw (data format \(different from the three we used in class\) is CSV. CSV which stands for Comma Separated) Tj T* 0 Tw 1.064987 Tw (Values is a simple format for storing tabular data in text files. You can compare csv files with Microsoft) Tj T* 0 Tw 2.026136 Tw (Excel spreadsheets. You may have already used these files without knowing. Although considered a) Tj T* 0 Tw .631654 Tw (simple format structure to use, many only use it as the last option when JSON or YAML aren\222t available,) Tj T* 0 Tw .06229 Tw (especially for large datasets. JSON \(JavaScript Object Notation\) & YAML \(Yet Another Markup Language\)) Tj T* 0 Tw .136654 Tw (are another two data structure options formats. A strength that CSV module can provide is that it is simple) Tj T* 0 Tw 1.345988 Tw (to use and familiar because of its similarity to Excel which many use in recent days. It can be a good) Tj T* 0 Tw 3.81498 Tw (option when working with data exported from spreadsheets and databases for data interchange.) Tj T* 0 Tw (\() Tj 0 0 .501961 rg (http://pymotw.com/2/csv/) Tj 0 0 0 rg (\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 566.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Reading a csv file:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 536.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.825251 Tw (In order to use the csv module you must import csv and use arguments to read the data files being) Tj T* 0 Tw (transferred.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 442.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 84 re B*
+Q
+q
+BT 1 0 0 1 0 62 Tm 12 TL /F3 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( import csv                     #imports the csv module) Tj T* (>) Tj (>) Tj (>) Tj ( myfile = open\(filename, 'r'\)   #opens the csv file) Tj T* (>) Tj (>) Tj (>) Tj ( reader = csv.reader\(myfile\)    #creates the reader object) Tj T* (>) Tj (>) Tj (>) Tj ( for row in reader:             #iterates the rows of the file in orders) Tj T* (    ) Tj (>) Tj (>) Tj (>) Tj ( print row                  #prints each row) Tj T* (>) Tj (>) Tj (>) Tj ( f.close\(\)                      #closes file) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 410.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F2 10 Tf 12 TL 1.036654 Tw (NOTE: Remember that every file opened to be read, must be closed at the end in order to avoid) Tj T* 0 Tw (future issues with the program.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 380.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .039989 Tw (CSV uses statements such as \221r\222 \(reader\(\)\) to read files. It as well uses what is called a \221delimiter\222 to hold a) Tj T* 0 Tw (place for spaces, tabs, commas, etc\205) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 362.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (\(Example: spamreader = csv.reader\(csvfile, delimiter=' '\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 344.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (You can use as well statements such as \221next\222\(reader\) to skip first lines in a csv file.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 311.8236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Writing a csv file:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 281.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .795444 Tw (To write a CSV file you can use the \221w\222 writer \(\) statement. This will allow the use to begin make to add) Tj T* 0 Tw (their writing.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 224.6236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 48 re B*
+Q
+q
+BT 1 0 0 1 0 26 Tm 12 TL /F3 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( fhandler = open\(\221test-write.txt\222, \221w\222\)) Tj T* (>) Tj (>) Tj (>) Tj ( fhandler.write\(\221This is the first line\222\)) Tj T* (>) Tj (>) Tj (>) Tj ( fhandler.close\(\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 192.6236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F2 10 Tf 12 TL 1.036654 Tw (NOTE: Remember that every file opened to be read, must be closed at the end in order to avoid) Tj T* 0 Tw (future issues with the program.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 126.6236 cm
+q
+BT 1 0 0 1 0 50 Tm 2.271163 Tw 12 TL /F1 10 Tf 0 0 0 rg (A weaknesses is that there is no \223CSV standard\224. What this means is that csv is usually formatted) Tj T* 0 Tw 1.430542 Tw (dependent on the application that is being used to read and write it. Users would need to ensure that) Tj T* 0 Tw .349318 Tw (parameters are defined clearly so that no mistakes or errors are encountered, otherwise data produced &) Tj T* 0 Tw 1.78686 Tw (consumed may be different than what is expected. With clear and efficient programming it is easy to) Tj T* 0 Tw (manipulate the module and have a clean program.) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+14 0 obj
+<< /Nums [ 0 15 0 R ] >>
+endobj
+15 0 obj
+<< /S /D /St 1 >>
+endobj
+xref
+0 16
+0000000000 65535 f
+0000000075 00000 n
+0000000129 00000 n
+0000000239 00000 n
+0000000354 00000 n
+0000000533 00000 n
+0000000641 00000 n
+0000000868 00000 n
+0000000975 00000 n
+0000001195 00000 n
+0000001271 00000 n
+0000001393 00000 n
+0000001515 00000 n
+0000001578 00000 n
+0000006995 00000 n
+0000007039 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com)
+ [(\346\014/\320\224R\3766Wg\357^q,\357H) (\346\014/\320\224R\3766Wg\357^q,\357H)]
+ /Info 8 0 R /Root 7 0 R /Size 16 >>
+startxref
+7076
+%%EOF
